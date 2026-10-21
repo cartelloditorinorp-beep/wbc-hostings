@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WBC HOSTING</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #090909;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 24px;
+      border-bottom: 1px solid #b88a32;
+      background: #111;
+    }
+    header h1 { color: #e6b84c; margin: 0; }
+    header p { color: #aaa; margin-bottom: 0; }
+    main { padding: 22px; max-width: 1000px; margin: auto; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #151515;
+      border: 1px solid #34302a;
+      border-radius: 14px;
+      padding: 20px;
+    }
+    .card h2 { color: #e6b84c; font-size: 18px; }
+    .status { color: #f0bd4b; }
+    button {
+      background: #d6a63e;
+      color: #111;
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { background: #f4ce72; }
+    footer { text-align: center; color: #777; padding: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>⟦ WBC HOSTING ⟧</h1>
+    <p>Il tuo spazio di gestione Discord</p>
+  </header>
+
+  <main>
+    <h2>Dashboard</h2>
+    <div class="grid">
+      <section class="card">
+        <h2>🖥️ Server</h2>
+        <p class="status">● Pannello inizializzato</p>
+        <p>Il sistema di hosting deve ancora essere collegato.</p>
+      </section>
+
+      <section class="card">
+        <h2>🤖 Gestione bot</h2>
+        <p>Avvio, arresto e riavvio dei bot Discord.</p>
+        <p>Backend: non collegato</p>
+      </section>
+
+      <section class="card">
+        <h2>📊 Risorse</h2>
+        <p>CPU: in attesa del server</p>
+        <p>RAM: in attesa del server</p>
+      </section>
+
+      <section class="card">
+        <h2>📋 Console</h2>
+        <p>Qui mostreremo i log dei bot quando il backend sarà configurato.</p>
+        <button onclick="alert('La console sarà attivata nel prossimo passaggio.')">
+          Apri console
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <footer>WBC HOSTING · Progetto in sviluppo</footer>
+</body>
+</html>
